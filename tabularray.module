@@ -49,6 +49,7 @@ InsetLayout Flex:tblr
 End
 
 Style Tblr_Inner_Style
+  Category         "Tblr Style"
   LatexName        SetTblrInner
   LatexType        command
   LabelString      "Set Tblr Inner"
