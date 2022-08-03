@@ -8,6 +8,9 @@
 \begin_preamble
 \usepackage{xcolor}
 \NewTblrEnviron{example}
+\UseTblrLibrary{amsmath}
+
+	
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -312,9 +315,9 @@ status open
 
 \begin_layout Plain Layout
 
-hlines = {white}, vlines = {white}, cell{1,6}{odd} = {teal7}, cell{1,6}{even}
- = {green7}, cell{2,4}{1,4} = {red7}, cell{3,5}{1,4} = {purple7}, cell{2}{2}
- = {r=4,c=2}{c,azure7}
+hlines={white}, vlines={white}, cell{1,6}{odd}={teal7}, cell{1,6}{even}={green7}
+, cell{2,4}{1,4}={red7}, cell{3,5}{1,4}={purple7}, cell{2}{2}={r=4,c=2}{c,azure7
+}
 \end_layout
 
 \end_inset
@@ -610,6 +613,363 @@ Nicer Table
 \end_layout
 
 \begin_layout Subsection
+A Tabular With Preview
+\end_layout
+
+\begin_layout Standard
+If you would like to see the table, as it would look in the ouptput pdf,
+ wrap it with the preview layout via 
+\family sans
+Insert\SpecialChar menuseparator
+Preview
+\end_layout
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset Flex tblr
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+hlines={white}, vlines={white}, cell{1,6}{odd}={teal7}, cell{1,6}{even}={green7}
+, cell{2,4}{1,4}={red7}, cell{3,5}{1,4}={purple7}, cell{2}{2}={r=4,c=2}{c,azure7
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alpha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gamma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Delta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epsilon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zeta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Theta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iota
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kappa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lambda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nnu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Xi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Omicrin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pi
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sigma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tau
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Upsilon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Psi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Omega
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nicer Table With Preview
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Any parameters set with 
+\begin_inset Quotes eld
+\end_inset
+
+Set Tblr Inner
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+Set Tblr Outer
+\begin_inset Quotes erd
+\end_inset
+
+ wont be seen in the preview layout.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Predefined Styles
 \end_layout
 
@@ -647,7 +1007,8 @@ Outer
 \end_layout
 
 \begin_layout Tblr Inner Style
-row{odd}={bg=pink}
+
+width=10cm,colspec={X[c]},row{odd}={bg=pink}
 \end_layout
 
 \begin_layout Standard
@@ -706,6 +1067,7 @@ example
 \end_layout
 
 \begin_layout Tblr Inner Style
+
 \begin_inset Argument 1
 status open
 
@@ -720,6 +1082,7 @@ width=10cm,colspec={X[c]},rows={ht=2cm},hlines,vlines
 \end_layout
 
 \begin_layout Tblr Outer Style
+
 \begin_inset Argument 1
 status open
 
@@ -853,6 +1216,200 @@ example tabular-array default
 
 \end_layout
 
+\begin_layout Subsection
+Using Tblr Outside Of Tblr Layout
+\end_layout
+
+\begin_layout Standard
+To make all tables in the lyx file be prduced by tblr, insert an ERT layout
+ in the point you want the make the convertion (or in the preamble) with
+ the following code
+\end_layout
+
+\begin_layout Verbatim
+
+
+\backslash
+renewenvironment{tabular}[1]{%
+\end_layout
+
+\begin_layout Verbatim
+
+	
+\backslash
+def
+\backslash
+tabularnewline{
+\backslash
+
+\backslash
+}%
+\end_layout
+
+\begin_layout Verbatim
+
+	
+\backslash
+begin{tblr}[expand=
+\backslash
+tabularnewline]{colspec={#1}}%
+\end_layout
+
+\begin_layout Verbatim
+
+	}{
+\backslash
+end{tblr}}
+\end_layout
+
+\begin_layout Standard
+Note that some latex environments are using the tabular environment internally,
+ use this hack with care.
+ In the following example the table will have the parameters defined in
+ Subsection 2.4 via 
+\family sans
+Set
+\begin_inset space ~
+\end_inset
+
+Tbir
+\begin_inset space ~
+\end_inset
+
+Inner 
+\family default
+(the unnamed one)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewenvironment{tabular}[1]{%
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+def
+\backslash
+tabularnewline{
+\backslash
+
+\backslash
+}%
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+begin{tblr}[expand=
+\backslash
+tabularnewline]{colspec={#1}}%
+\end_layout
+
+\begin_layout Plain Layout
+
+	}{
+\backslash
+end{tblr}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tblr outside of the Tblr layout 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Important Remarks
 \end_layout
@@ -900,7 +1457,7 @@ status open
 
 \begin_layout Plain Layout
 
-width=10cm,colspec={X[c]},rows={ht=2cm},vlines,hlines
+rows={ht=2cm},vlines,hlines
 \end_layout
 
 \end_inset
@@ -1037,6 +1594,13 @@ expand
  provided by the tabularray package.
  Since this key has only one value it wont be possible to use this key with
  the module.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \end_body
