@@ -45,7 +45,7 @@ InsetLayout Flex:tblr
 			\begin{#3}[#1,expand=\tabularnewline]{colspec={##1},#2}%
 			}{\end{#3}}}{\endgroup}
 	EndPreamble
-	Requires              tabularray
+	Requires              tabularray-2021
 End
 
 Style Tblr_Inner_Style
@@ -80,6 +80,10 @@ Style Tblr_Inner_Style
     Mandatory		0
     AutoInsert	0
   EndArgument
+  Preamble
+	\usepackage{tabularray-2021}
+  EndPreamble
+  Requires              tabularray-2021
 End
 
 Style Tblr_Outer_Style
