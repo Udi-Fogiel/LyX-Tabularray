@@ -1,5 +1,5 @@
 # Using Tabularray In Lyx
-Tabularray.mosule is a module created for using tabularray In LyX.
+Tabularray.mosule is a module created for the use of tabularray In LyX.
 
 ## Use
 
