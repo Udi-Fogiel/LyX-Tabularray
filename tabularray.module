@@ -1,0 +1,96 @@
+#\DeclareLyXModule[tabularray-2021.sty]{Tabularray}
+#DescriptionBegin
+#Adds custom inset that support tabular environment via the tabularray package.
+#See the tabularray documentation for details.
+#DescriptionEnd
+
+# Original Author : Udi Fogiel
+
+Format 66
+
+InsetLayout Flex:tblr
+	LyXType				custom
+	LatexType			environment
+	Decoration			classic
+	LatexName			lyxtblr
+	LabelString			"Tblr"
+	Argument 1
+	  LabelString		"outer"
+	  Tooltip			"specify outer settings"
+	  PassThru		1
+	  Mandatory		0
+	  AutoInsert	0
+	EndArgument
+	Argument 2
+	  LabelString		"inner"
+	  Tooltip			"specify inner settings"
+	  PassThru		1
+	  Mandatory		1
+	  AutoInsert	1
+	EndArgument
+	Argument 3
+	  LabelString		"name"
+	  Tooltip			"specify tblr name"
+	  PassThru		1
+	  Mandatory		1
+	  AutoInsert	0
+	  DefaultArg	tblr
+	EndArgument
+	Preamble
+	\usepackage{tabularray-2021}
+	\newenvironment{lyxtblr}[3][]{%	
+		\begingroup
+		\def\tabularnewline{\\}%
+		\renewenvironment{tabular}[1]{%
+			\begin{#3}[#1,expand=\tabularnewline]{colspec={##1},#2}%
+			}{\end{#3}}}{\endgroup}
+	EndPreamble
+	Requires              tabularray
+End
+
+Style Tblr_Inner_Style
+  LatexName        SetTblrInner
+  LatexType        command
+  LabelString      "Set Tblr Inner"
+  PassThru         1
+  Margin           Dynamic
+  LabelSep         xx
+  ParSkip          0.0
+  ItemSep          0.2
+  TopSep           0.7
+  BottomSep        0.7
+  ParSep           0.3
+  Align            Block
+  AlignPossible    Block
+  LabelType        Static
+  Font
+    Color          latex
+    Family         typewriter
+  EndFont
+  LabelFont
+    Color          green
+    Family         roman
+  EndFont
+  Spellcheck       0
+  Argument 1
+    LabelString		"name"
+    Tooltip			"specify inner settings"
+    PassThru		1
+    Mandatory		0
+    AutoInsert	0
+  EndArgument
+End
+
+Style Tblr_Outer_Style
+  CopyStyle	       Tblr_Inner_Style
+  LatexName        SetTblrOuter
+  LatexType        command
+  LabelString      "Set Tblr Outer"
+  Argument 1
+    LabelString		"name"
+    Tooltip			"specify outer settings"
+    PassThru		1
+    Mandatory		0
+    AutoInsert	0
+  EndArgument
+End

@@ -1,0 +1,1043 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrartcl
+\begin_preamble
+\usepackage{xcolor}
+\NewTblrEnviron{example}
+\end_preamble
+\use_default_options true
+\begin_modules
+tabularray
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\pdf_quoted_options "linkcolor=blue"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Using tabularray In \SpecialChar LyX
+
+\end_layout
+
+\begin_layout Author
+Udi Fogiel
+\end_layout
+
+\begin_layout Section
+Preparation
+\end_layout
+
+\begin_layout Standard
+To use tabularray In \SpecialChar LyX
+, load the module 
+\family sans
+Tabularray
+\family default
+ in the document settings of your file.
+\end_layout
+
+\begin_layout Section
+usage
+\end_layout
+
+\begin_layout Standard
+To insert a tabularray to go to 
+\family sans
+Insert\SpecialChar menuseparator
+Custom
+\begin_inset space ~
+\end_inset
+
+Insets\SpecialChar menuseparator
+Tblr
+\family default
+, then, insert a table inside the Tblr layout.
+ To specify any inner specs, write them in the 
+\begin_inset Quotes eld
+\end_inset
+
+inner
+\begin_inset Quotes erd
+\end_inset
+
+ argument of the layout.
+ To specify any outer specs, press 
+\family typewriter
+Alt+A
+\begin_inset space ~
+\end_inset
+
+1 
+\family default
+and write the outer specs in the 
+\begin_inset Quotes eld
+\end_inset
+
+outer
+\begin_inset Quotes erd
+\end_inset
+
+ argument of the layout.
+ 
+\end_layout
+
+\begin_layout Subsection
+example 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex tblr
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+t
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+width=10cm,colspec={X[c]},rows={ht=2cm},hlines,vlines
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nice Table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+More Complicated Example
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The design was stolen from the tabularray documentation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex tblr
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+hlines = {white}, vlines = {white}, cell{1,6}{odd} = {teal7}, cell{1,6}{even}
+ = {green7}, cell{2,4}{1,4} = {red7}, cell{3,5}{1,4} = {purple7}, cell{2}{2}
+ = {r=4,c=2}{c,azure7}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Alpha
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Beta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gamma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Delta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Epsilon
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zeta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Eta
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Theta
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Iota
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Kappa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lambda
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mu
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nnu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Xi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Omicrin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pi
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rho
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sigma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tau
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Upsilon
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Phi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Psi
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Omega
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Nicer Table
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Predefined Styles
+\end_layout
+
+\begin_layout Standard
+If you would like to change the default appearence of all unnamed tabular-array,
+ insert the 
+\family sans
+Set
+\begin_inset space ~
+\end_inset
+
+Tbir
+\begin_inset space ~
+\end_inset
+
+Inner
+\family default
+ and 
+\family sans
+Set
+\begin_inset space ~
+\end_inset
+
+Tbir
+\begin_inset space ~
+\end_inset
+
+Outer
+\family default
+ layouts via \SpecialChar LyX
+'s style selection combobox and specify the inner spec and
+ outer spec accordingly.
+ For example, after the next line all unnamed tabular-array's odd rows will
+ have pink background as can be seen in Section 3.
+\end_layout
+
+\begin_layout Tblr Inner Style
+row{odd}={bg=pink}
+\end_layout
+
+\begin_layout Standard
+If you want to use several tabulararrays with the same design (or somewhat
+ similar), but dont want to change all tabular-arrays, you could declare
+ a new tabular-array via 
+\family typewriter
+
+\backslash
+NewTblrEnviron{<name>}
+\family default
+ in ERT layout or in the preamble, then insert the 
+\family sans
+Set
+\begin_inset space ~
+\end_inset
+
+Tbir
+\begin_inset space ~
+\end_inset
+
+Inner
+\family default
+ and 
+\family sans
+Set
+\begin_inset space ~
+\end_inset
+
+Tbir
+\begin_inset space ~
+\end_inset
+
+Outer
+\family default
+ layout via \SpecialChar LyX
+'s style selection combobox, press 
+\family typewriter
+Alt+A
+\begin_inset space ~
+\end_inset
+
+1 
+\family default
+and write the name of the tabulararray you would like to change.
+ For example any tabular-array with the name 
+\begin_inset Quotes eld
+\end_inset
+
+example
+\begin_inset Quotes erd
+\end_inset
+
+ after the next line will have hlines as default.
+ 
+\end_layout
+
+\begin_layout Tblr Inner Style
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+example
+\end_layout
+
+\end_inset
+
+width=10cm,colspec={X[c]},rows={ht=2cm},hlines,vlines
+\end_layout
+
+\begin_layout Tblr Outer Style
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+example
+\end_layout
+
+\end_inset
+
+t
+\end_layout
+
+\begin_layout Standard
+To insert a named tabular-array, begin as usual, inside the layout press
+ 
+\family typewriter
+Alt+A
+\begin_inset space ~
+\end_inset
+
+3 
+\family default
+and specify the name.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex tblr
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+
+example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+example tabular-array default
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Important Remarks
+\end_layout
+
+\begin_layout Itemize
+In the current tabularray package the commands 
+\family typewriter
+
+\backslash
+multirow
+\family default
+ and 
+\family typewriter
+
+\backslash
+mulricolumn
+\family default
+ (which lyx uses internally) are absolete, thus the module is loading tabularray
+-2021.sty, not tabularray.sty.
+\end_layout
+
+\begin_layout Itemize
+Any hlines or vlines specification in the inner argument will add the lines
+ ontop of the lines appear in the \SpecialChar LyX
+ GUI and will not replace them, for example
+ the following table will generate with two horizontal lines at the top
+ of the table
+\begin_inset Flex tblr
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+t
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+
+width=10cm,colspec={X[c]},rows={ht=2cm},vlines,hlines
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Item 3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Remark
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Any cell alignment specification in the inner argument will override the
+ alignment specification that was made in the GUI
+\end_layout
+
+\begin_layout Itemize
+Tables outside the Tblr layout will not be produced via tabularray, thus
+ you can still use 
+\begin_inset Quotes eld
+\end_inset
+
+regular
+\begin_inset Quotes erd
+\end_inset
+
+ tables.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Regular
+\begin_inset Quotes erd
+\end_inset
+
+ tables won't be affected by any global settings of tabularray.
+ 
+\end_layout
+
+\begin_layout Itemize
+The module alredy use the key 
+\begin_inset Quotes eld
+\end_inset
+
+expand
+\begin_inset Quotes erd
+\end_inset
+
+ provided by the tabularray package.
+ Since this key has only one value it wont be possible to use this key with
+ the module.
+\end_layout
+
+\end_body
+\end_document
